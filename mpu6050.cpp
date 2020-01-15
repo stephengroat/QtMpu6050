@@ -7,6 +7,11 @@
 #include <sys/types.h>
 #include <time.h>
 
+extern "C" {
+    #include <linux/i2c-dev.h>
+    #include <i2c/smbus.h>
+}
+
 Mpu6050::Mpu6050()
     :accelReading(), gyroReading(), tempReading(), fd(-1)
 {

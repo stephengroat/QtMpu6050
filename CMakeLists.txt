@@ -22,6 +22,7 @@ add_library(
 target_link_libraries(mpu6050
     Qt5::Sensors
 )
+target_link_libraries(mpu6050 i2c)
 
 install(
     TARGETS mpu6050
