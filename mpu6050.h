@@ -6,7 +6,7 @@
 #include <QAmbientTemperatureSensor>
 #include <QTimer>
 
-#define MPU_I2C "/dev/i2c-1"
+#define MPU_I2C "/dev/i2c-5"
 #define MPU_ADDRESS 0x68
 
 #define MPU_ACCEL_XOUT 0x3b
