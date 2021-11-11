@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: dependencies
-      run: sudo apt-get install libi2c-dev cmake qt5
+      run: sudo apt-get install libi2c-dev cmake qt5-default
     - name: build
       run: |
         mkdir build
