@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: dependencies
+      run: sudo apt-get install libi2c-dev cmake libqt5sensors5-dev
+    - name: build
+      run: |
+        mkdir build
+        cd build 
+        CMAKE_PREFIX_PATH=/opt/qt5 cmake ../
+        make 

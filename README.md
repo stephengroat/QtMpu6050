@@ -4,7 +4,7 @@ QtSensors wrapper for the MPU6050 accelerometer/gyroscope/thermometer. Forked fr
 
 ### Dependency
 
-    sudo apt-get install libi2c-dev cmake 
+    sudo apt-get install libi2c-dev cmake libqt5sensors5-dev 
 
 ### Build  
 
